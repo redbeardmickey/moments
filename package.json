@@ -1,0 +1,26 @@
+{
+  "name": "moments",
+  "version": "1.0.0",
+  "description": "Mickey's web gallery",
+  "main": "index.html",
+  "dependencies": {
+    "photoswipe": "^4.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redbeardmickey/moments.git"
+  },
+  "keywords": [
+    "Photography"
+  ],
+  "author": "Mickey Li",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redbeardmickey/moments/issues"
+  },
+  "homepage": "https://github.com/redbeardmickey/moments#readme"
+}
