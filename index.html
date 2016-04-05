@@ -2,9 +2,140 @@
 <html>
 <head>
 	<title>Moments</title>
+	<meta name="description" content="Mickey's Photography Gallery">
+	<meta name="author" content="Mickey Li">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="node_modules/photoswipe/dist/photoswipe.css">
+
+  <link rel="stylesheet" href="node_modules/photoswipe/dist/default-skin/default-skin.css">
+
+  <!-- load Lato web font -->
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 <body>
-	<h1>Moments</h1>
-	<h3>Under Construction...</h3>
+  <div id="page">
+    <header>
+      <div class="col-left">
+        <h1>Moments</h1>
+      </div>
+      <div class="col-right">
+      	<h4>Photography by Mickey Li</h4>
+      </div>
+    </header>
+    <div class="grid">
+      <div class="col-left pairing">
+        <h3>Yosemite</h3>
+        <h5>April, 2016</h5>
+      </div>
+      <div class="col-right">
+        <div class="my-gallery">
+          <div class="my-gallery-item">
+          test
+          </div>
+                    <div class="my-gallery-item">
+          test
+          </div>
+                    <div class="my-gallery-item">
+          test
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="col-left pairing">
+        <h3>NYC - Chicago</h3>
+        <h5>Dec, 2015</h5>
+      </div>
+      <div class="col-right">
+        <div class="my-gallery">
+          <div class="my-gallery-item">
+          test
+          </div>
+                    <div class="my-gallery-item">
+          test
+          </div>
+                    <div class="my-gallery-item">
+          test
+          </div>
+          <div class="my-gallery-item">
+          test
+          </div>
+          <div class="my-gallery-item">
+          test
+          </div>
+          <div class="my-gallery-item">
+          test
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="col-left pairing">
+        <h3>Japan</h3>
+        <h5>July, 2015</h5>
+      </div>
+      <div class="col-right">
+          <div class="my-gallery">
+            <div class="my-gallery-item">
+            test
+            </div>
+                      <div class="my-gallery-item">
+            test
+            </div>
+                      <div class="my-gallery-item">
+            test
+            </div>
+            <div class="my-gallery-item">
+            test
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="push"></div>
+  </div>
+  <footer class="text-align-center">
+    Designed and hand-built by Mickey Li using <a href="http://photoswipe.com/">PhotoSwipe</a>
+  </footer>
+
+
+  <!-- Core JS file -->
+  <script src="node_modules/photoswipe/dist/photoswipe.min.js"></script>
+
+  <!-- UI JS file -->
+  <script src="node_modules/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+
+  <script type="text/javascript">
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+
+  // build items array
+  var items = [
+      {
+          src: 'https://placekitten.com/600/400',
+          w: 600,
+          h: 400
+      },
+      {
+          src: 'https://placekitten.com/1200/900',
+          w: 1200,
+          h: 900
+      }
+  ];
+
+  // define options (if needed)
+  var options = {
+      // optionName: 'option value'
+      // for example:
+      index: 0 // start at first slide
+  };
+
+  // Initializes and opens PhotoSwipe
+  var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+  // gallery.init();
+  </script>
 </body>
 </html>

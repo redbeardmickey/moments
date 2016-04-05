@@ -1,0 +1,112 @@
+$footer-height: 50px
+
+html
+  font-family: Lato, Arial, sans-serif
+  font-size: 14px
+  color: #454545
+
+html, body
+  height: 100%
+  margin: 0
+
+*, *::before, *::after
+  box-sizing: border-box
+
+// typography
+h1
+  font-weight: 300
+  font-size: 34px
+
+h3
+  font-weight: 300
+  font-size: 24px
+
+h4
+  font-weight: 300
+  font-size: 20px
+h5
+  font-weight: 300
+  font-size: 18px
+
+.pairing
+  h1, h3, h4, h5
+    margin: 0
+    margin-bottom: 0.2em
+
+// text-align utilities
+.text-align-right
+  text-align: right
+
+.text-align-left
+  text-align: left
+
+.text-align-center
+  text-align: center
+
+// grid layout utilities
+
+.grid::after
+  content: ''
+  display: table
+  clear: both
+
+[class*='col-']
+  float: left
+  height: 100%
+  // padding-right: 20px
+
+[class*='col-']:last-of-type
+  padding-right: 0
+
+@media screen and (min-width: 769px)
+  .col-left
+    width: 25%
+    text-align: right
+    padding-right: 20px
+
+  .col-right
+    width: 75%
+
+@media screen and (max-width: 768px)
+  .col-left, .col-right
+    width: 100%
+    padding: 0
+
+#page
+  max-width: 1024px
+  margin: auto
+  min-height: 100%
+  margin: 0 auto -50px
+
+.my-gallery
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+.my-gallery-item
+  padding: 5px
+  margin: 0 5px 5px 0
+  height: 150px
+  width: 150px
+  background: #eeeeee
+
+footer, .push
+  height: $footer-height
+  padding-top: 15px
+
+header, .grid
+  padding-left: 15px
+  margin-bottom: 10px
+
+@media screen and (min-width: 769px)
+  header
+    display: flex
+    align-items: baseline
+
+@media screen and (max-width: 768px)
+  header
+    display: block
+    h1
+      margin-bottom: 0
+    h4
+      margin-top: 0
