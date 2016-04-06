@@ -1,5 +1,3 @@
-'use strict'
-
 var initPhotoSwipeFromDOM = function(gallerySelector) {
 
   // parse slide data (url, title, size ...) from DOM elements
@@ -204,44 +202,60 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 // execute above function
 // initPhotoSwipeFromDOM('.my-gallery');
 
-var albums = [];
+$( function() {
 
-function getPhotos(url) {
-  loadJSON(url, function(data) {
-    albums = JSON.parse(data);
-    console.log(albums);
-    albums.forEach(function(album) {
-      var photos = album.photos;
-      console.log(photos);
-      photos.forEach(function(photo) {
-        var template = $('#template').html();
-        Mustache.parse(template);
-        var rendered = Mustache.render(template, photo);
-        $(rendered).appendTo('body');
-      })
-    })
-  });
-}
+  $.getJSON('images/photo.json', function(data) {
+    var galleryTemplate = $('#galleryTemplate').html();
+    Mustache.parse(galleryTemplate);
+    var renderedGallery = Mustache.render(galleryTemplate, data);
+    var $gallery = $(renderedGallery);
+    $gallery.appendTo('#albums');
 
-getPhotos('images/photo.json');
+    $('.album').each(function(){
 
+      // console.log($(this).attr('id'));
+      var albumID = $(this).attr('id');
+      var filteredAlbums = data.albums.filter(function(album) {
+        return album.albumID === albumID;
+      });
 
-// vanilla JS
-var msnry = new Masonry( '.my-gallery', {
-  itemSelector: '.my-gallery-item',
+      var photos = { photos: filteredAlbums[0].photos };
+      // console.log(photos);
+
+      var $container = $(this).masonry({
+        itemSelector: '.album-thumbnail'
+      });
+
+      var thumbnailTemplate = $('#thumbnailTemplate').html();
+      Mustache.parse(thumbnailTemplate);
+      var renderedAlbum = Mustache.render(thumbnailTemplate, photos);
+      var $thumbnails = $(renderedAlbum);
+      // console.log($album);
+      $container.masonryImagesReveal($thumbnails);
+
+    });
+
+  })
 });
 
-function loadJSON(url, callback) {
+$.fn.masonryImagesReveal = function($thumbnails) {
+  var msnry = this.data('masonry');
+  var itemSelector = msnry.options.itemSelector;
 
-  var xobj = new XMLHttpRequest();
+  $thumbnails.hide();
+  this.append( $thumbnails );
+  $thumbnails.imagesLoaded().progress( function( imgLoad, image ) {
+    // get item
+    // image is imagesLoaded class, not <img>, <img> is image.img
+    var $item = $( image.img ).parents( itemSelector );
+    // console.log($item);
+    // un-hide item
+    $item.show();
 
-  xobj.overrideMimeType("application/json");
-  xobj.open('GET', url, true); // Replace 'my_data' with the path to your file
-  xobj.onreadystatechange = function () {
-    if (xobj.readyState == 4 && xobj.status == "200") {
-      // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-      callback(xobj.responseText);
-    }
-  };
-  xobj.send(null);
+    // masonry does its thing
+    msnry.appended( $item );
+    msnry.layout();
+  });
+
+  return this;
 }

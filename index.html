@@ -26,83 +26,8 @@
       	<h4>Photography by Mickey Li</h4>
       </div>
     </header>
-    <div class="grid">
-      <div class="col-left pairing">
-        <h3>Yosemite</h3>
-        <h5>April, 2016</h5>
-      </div>
-      <div class="col-right">
-        <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          <a href="images/large/yosemite/yosemite1.jpg" class="my-gallery-item" data-size="1200*797">
-            <img src="images/thumbnails/yosemite/yosemite_thumbnail1.jpg" alt="yosemite tunnel view" />
-          </a>
-          <a href="images/large/yosemite/yosemite2.jpg" class="my-gallery-item" data-size="797*1200">
-            <img src="images/thumbnails/yosemite/yosemite_thumbnail2.jpg" alt="yosemite falls" />
-          </a>
-          <a href="images/large/yosemite/yosemite3.jpg" class="my-gallery-item" data-size="800*1200">
-            <img src="images/thumbnails/yosemite/yosemite_thumbnail3.jpg" alt="yosemite mirror lake" />
-          </a>
-          <a href="images/large/yosemite/yosemite4.jpg" class="my-gallery-item" data-size="797*1200">
-            <img src="images/thumbnails/yosemite/yosemite_thumbnail4.jpg" alt="yosemite valley" />
-          </a>
-          <a href="images/large/yosemite/yosemite5.jpg" class="my-gallery-item" data-size="797*1200">
-            <img src="images/thumbnails/yosemite/yosemite_thumbnail5.jpg" alt="yosemite upper fall" />
-          </a>
-          <a href="images/large/yosemite/yosemite6.jpg" class="my-gallery-item" data-size="797*1200">
-            <img src="images/thumbnails/yosemite/yosemite_thumbnail6.jpg" alt="yosemite mule deer" />
-          </a>
-          <a href="images/large/yosemite/yosemite7.jpg" class="my-gallery-item" data-size="1200*797">
-            <img src="images/thumbnails/yosemite/yosemite_thumbnail7.jpg" alt="yosemite tunnel view wide" />
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="grid">
-      <div class="col-left pairing">
-        <h3>NYC - Chicago</h3>
-        <h5>Dec, 2015</h5>
-      </div>
-      <div class="col-right">
-        <div class="my-gallery">
-        </div>
-      </div>
-    </div>
-    <div class="grid">
-      <div class="col-left pairing">
-        <h3>Japan</h3>
-        <h5>July, 2015</h5>
-      </div>
-      <div class="col-right">
-          <div class="my-gallery">
-          </div>
-      </div>
-    </div>
-    <div class="grid">
-      <div class="col-left pairing">
-        <h3>Alaska</h3>
-        <h5>March, 2015</h5>
-      </div>
-      <div class="col-right">
-        <div class="my-gallery">
-          <a href="images/large/alaska/alaska1.jpg" class="my-gallery-item" data-size="750*498">
-            <img src="images/thumbnails/alaska/alaska_thumbnail1.jpg" alt="alaska aurora light" />
-          </a>
-          <a href="images/large/alaska/alaska2.jpg" class="my-gallery-item" data-size="750*498">
-            <img src="images/thumbnails/alaska/alaska_thumbnail2.jpg" alt="alaska aurora light" />
-          </a>
-          <a href="images/large/alaska/alaska3.jpg" class="my-gallery-item" data-size="750*1129">
-            <img src="images/thumbnails/alaska/alaska_thumbnail3.jpg" alt="alaska aurora light" />
-          </a>
-          <a href="images/large/alaska/alaska4.jpg" class="my-gallery-item" data-size="750*498">
-            <img src="images/thumbnails/alaska/alaska_thumbnail4.jpg" alt="alaska aurora light" />
-          </a>
-          <a href="images/large/alaska/alaska5.jpg" class="my-gallery-item" data-size="750*498">
-            <img src="images/thumbnails/alaska/alaska_thumbnail5.jpg" alt="alaska aurora light" />
-          </a>
-        </div>
-      </div>
-    </div>
+    <section id="albums">
+    </section>
     <div class="push"></div>
   </div>
   <footer class="text-align-center">
@@ -170,11 +95,30 @@
 
   </div>
 
-  <script id="template" type="x-tmpl-mustache">
-    <a href={{name}} class="my-gallery-item" data-size={{width}}*{{height}}>
+  <script id="galleryTemplate" type="x-tmpl-mustache">
+    {{#albums}}
+    <div class="grid">
+      <div class="col-left pairing">
+        <h3>{{albumName}}</h3>
+        <h5>{{date}}</h5>
+      </div>
+      <div class="col-right">
+        <div class="album" id={{albumID}}>
+        </div>
+      </div>
+    </div>
+    {{/albums}}
+  </script>
+
+  <script id="thumbnailTemplate" type="x-tmpl-mustache">
+    {{#photos}}
+    <a href={{name}} class="album-thumbnail" data-size={{width}}*{{height}}>
       <img src={{thumbnail.name}} alt={{caption}} />
     </a>
+    {{/photos}}
   </script>
+
+  <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
 
   <!-- Core JS file -->
   <script src="node_modules/photoswipe/dist/photoswipe.min.js"></script>
@@ -186,7 +130,6 @@
   <script src="node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
   <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
   <script src="node_modules/mustache/mustache.min.js"></script>
-  <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 
 </body>

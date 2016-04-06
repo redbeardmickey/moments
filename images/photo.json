@@ -1,9 +1,11 @@
-[{
-  "album": "Yosemite",
+{
+  "albums": [{
+  "albumName": "Yosemite",
+  "albumID": "yosemite0416",
   "date": "April, 2016",
   "photos": [{
     "thumbnail": {
-      "name": "images/thumbnails/yosemite/yosemite_thumbnail1.jpg",
+      "name": "http://placehold.it/375x249",
       "height": 249,
       "width": 375
     },
@@ -14,7 +16,29 @@
   },
   {
     "thumbnail": {
-      "name": "images/thumbnails/yosemite/yosemite_thumbnail2.jpg",
+      "name": "http://placehold.it/375x249",
+      "height": 249,
+      "width": 375
+    },
+    "name": "images/large/yosemite/yosemite1.jpg",
+    "caption": "Tunnel View of Yosemite Valley",
+    "height": 797,
+    "width": 1200
+  },
+  {
+    "thumbnail": {
+      "name": "http://placehold.it/375x249",
+      "height": 249,
+      "width": 375
+    },
+    "name": "images/large/yosemite/yosemite1.jpg",
+    "caption": "Tunnel View of Yosemite Valley",
+    "height": 797,
+    "width": 1200
+  },
+  {
+    "thumbnail": {
+      "name": "http://placehold.it/375x249",
       "height": 375,
       "width": 249
     },
@@ -25,11 +49,39 @@
   }]
 },
 {
-  "album": "Alaska",
-  "date": "April, 2015",
+  "albumName": "Japan",
+  "albumID": "japan0615",
+  "date": "June, 2015",
   "photos": [{
     "thumbnail": {
-      "name": "images/thumbnails/alaska/alaska_thumbnail1.jpg",
+      "name": "http://placehold.it/249x375",
+      "height": 249,
+      "width": 375
+    },
+    "name": "images/large/japan/japan1.jpg",
+    "caption": "Japan 1",
+    "height": 797,
+    "width": 1200
+  },
+  {
+    "thumbnail": {
+      "name": "http://placehold.it/375x249",
+      "height": 249,
+      "width": 375
+    },
+    "name": "images/large/japan/japan2.jpg",
+    "caption": "Aurora light in Fairbanks, Alaska",
+    "height": 797,
+    "width": 1200
+  }]
+},
+{
+  "albumName": "Alaska",
+  "albumID": "alaska0315",
+  "date": "March, 2015",
+  "photos": [{
+    "thumbnail": {
+      "name": "http://placehold.it/375x249",
       "height": 249,
       "width": 375
     },
@@ -40,7 +92,7 @@
   },
   {
     "thumbnail": {
-      "name": "images/thumbnails/alaska/alaska_thumbnail2.jpg",
+      "name": "http://placehold.it/375x249",
       "height": 249,
       "width": 375
     },
@@ -50,3 +102,5 @@
     "width": 1200
   }]
 }]
+
+}

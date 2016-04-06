@@ -70,31 +70,26 @@ h5 {
   min-height: 100%;
   margin: 0 auto -50px; }
 
-.my-gallery {
+.album {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
 
-.my-gallery-item img {
+.album-thumbnail img {
   height: auto;
   width: 100%;
   display: block; }
-.my-gallery-item a {
+.album-thumbnail a {
   display: block; }
 
-.item-content {
-  background: #eeeeee;
-  height: 100%;
-  width: 100%; }
-
 @media screen and (min-width: 769px) {
-  .my-gallery-item {
+  .album-thumbnail {
     width: 33.33%; } }
 @media screen and (max-width: 768px) and (min-width: 376px) {
-  .my-gallery-item {
+  .album-thumbnail {
     width: 50%; } }
 @media screen and (max-width: 375px) {
-  .my-gallery-item {
+  .album-thumbnail {
     width: 100%; } }
 footer, .push {
   height: 50px;
@@ -123,7 +118,7 @@ figure {
     height: auto;
     width: 100%; }
 
-.my-gallery figcaption {
+.album figcaption {
   display: none; }
 
 /*# sourceMappingURL=style.css.map */
