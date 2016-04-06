@@ -1,0 +1,52 @@
+[{
+  "album": "Yosemite",
+  "date": "April, 2016",
+  "photos": [{
+    "thumbnail": {
+      "name": "pic_thumbnail.jpg",
+      "height": 200,
+      "width": 150
+    },
+    "name": "pic.jpg",
+    "caption": "this is the caption",
+    "height": 800,
+    "width": 600
+  },
+  {
+    "thumbnail": {
+      "name": "pic_thumbnail.jpg",
+      "height": 200,
+      "width": 150
+    },
+    "name": "pic.jpg",
+    "caption": "this is the caption",
+    "height": 800,
+    "width": 600
+  }]
+},
+{
+  "album": "NYC - Chicago",
+  "date": "Dec, 2015",
+  "photos": [{
+    "thumbnail": {
+      "name": "pic_thumbnail.jpg",
+      "height": 200,
+      "width": 150
+    },
+    "name": "pic.jpg",
+    "caption": "this is the caption",
+    "height": 800,
+    "width": 600
+  },
+  {
+    "thumbnail": {
+      "name": "pic_thumbnail.jpg",
+      "height": 200,
+      "width": 150
+    },
+    "name": "pic.jpg",
+    "caption": "this is the caption",
+    "height": 800,
+    "width": 600
+  }]
+}]

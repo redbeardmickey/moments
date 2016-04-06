@@ -32,15 +32,15 @@
         <h5>April, 2016</h5>
       </div>
       <div class="col-right">
-        <div class="my-gallery">
-          <div class="my-gallery-item">
-          test
+        <div class="my-gallery" data-masonry='{ "itemSelector": ".my-gallery-item"}'>
+          <div class="my-gallery-item" style="height: 140px">
+            <div class="item-content"></div>
           </div>
-                    <div class="my-gallery-item">
-          test
+          <div class="my-gallery-item" style="height: 300px">
+            <div class="item-content"></div>
           </div>
-                    <div class="my-gallery-item">
-          test
+          <div class="my-gallery-item" style="height: 200px">
+            <div class="item-content"></div>
           </div>
         </div>
       </div>
@@ -52,24 +52,24 @@
         <h5>Dec, 2015</h5>
       </div>
       <div class="col-right">
-        <div class="my-gallery">
-          <div class="my-gallery-item">
-          test
+        <div class="my-gallery" data-masonry='{ "itemSelector": ".my-gallery-item"}'>
+          <div class="my-gallery-item" style="height: 280px">
+          <div class="item-content"></div>
           </div>
-                    <div class="my-gallery-item">
-          test
+                    <div class="my-gallery-item" style="height: 230px">
+          <div class="item-content"></div>
           </div>
-                    <div class="my-gallery-item">
-          test
+                    <div class="my-gallery-item" style="height: 280px">
+          <div class="item-content"></div>
           </div>
-          <div class="my-gallery-item">
-          test
+          <div class="my-gallery-item" style="height: 280px">
+          <div class="item-content"></div>
           </div>
-          <div class="my-gallery-item">
-          test
+          <div class="my-gallery-item" style="height: 230px">
+          <div class="item-content"></div>
           </div>
-          <div class="my-gallery-item">
-          test
+          <div class="my-gallery-item" style="height: 180px">
+          <div class="item-content"></div>
           </div>
         </div>
       </div>
@@ -80,18 +80,18 @@
         <h5>July, 2015</h5>
       </div>
       <div class="col-right">
-          <div class="my-gallery">
-            <div class="my-gallery-item">
-            test
+          <div class="my-gallery" data-masonry='{ "itemSelector": ".my-gallery-item"}'>
+            <div class="my-gallery-item" style="height: 200px">
+            <div class="item-content"></div>
             </div>
-                      <div class="my-gallery-item">
-            test
+            <div class="my-gallery-item" style="height: 100px">
+            <div class="item-content"></div>
             </div>
-                      <div class="my-gallery-item">
-            test
+            <div class="my-gallery-item" style="height: 300px">
+            <div class="item-content"></div>
             </div>
-            <div class="my-gallery-item">
-            test
+            <div class="my-gallery-item" style="height: 280px">
+            <div class="item-content"></div>
             </div>
           </div>
       </div>
@@ -108,6 +108,9 @@
 
   <!-- UI JS file -->
   <script src="node_modules/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+
+  <!-- load masonry.js -->
+  <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
 
   <script type="text/javascript">
     var pswpElement = document.querySelectorAll('.pswp')[0];

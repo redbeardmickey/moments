@@ -85,17 +85,32 @@ h5
 
 .my-gallery-item
   padding: 5px
-  margin: 0 5px 5px 0
+  // margin: 0 5px 5px 0
   height: 150px
-  width: 150px
+
+.item-content
   background: #eeeeee
+  height: 100%
+  width: 100%
+
+@media screen and (min-width: 769px)
+  .my-gallery-item
+    width: 33.33%
+
+@media screen and (max-width: 768px) and (min-width: 376px)
+  .my-gallery-item
+    width: 50%
+
+@media screen and (max-width: 375px)
+  .my-gallery-item
+    width: 100%
 
 footer, .push
   height: $footer-height
   padding-top: 15px
 
 header, .grid
-  padding-left: 15px
+  // padding-left: 15px
   margin-bottom: 10px
 
 @media screen and (min-width: 769px)
