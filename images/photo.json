@@ -3,50 +3,50 @@
   "date": "April, 2016",
   "photos": [{
     "thumbnail": {
-      "name": "pic_thumbnail.jpg",
-      "height": 200,
-      "width": 150
+      "name": "images/thumbnails/yosemite/yosemite_thumbnail1.jpg",
+      "height": 249,
+      "width": 375
     },
-    "name": "pic.jpg",
-    "caption": "this is the caption",
-    "height": 800,
-    "width": 600
+    "name": "images/large/yosemite/yosemite1.jpg",
+    "caption": "Tunnel View of Yosemite Valley",
+    "height": 797,
+    "width": 1200
   },
   {
     "thumbnail": {
-      "name": "pic_thumbnail.jpg",
-      "height": 200,
-      "width": 150
+      "name": "images/thumbnails/yosemite/yosemite_thumbnail2.jpg",
+      "height": 375,
+      "width": 249
     },
-    "name": "pic.jpg",
-    "caption": "this is the caption",
-    "height": 800,
-    "width": 600
+    "name": "images/large/yosemite/yosemite2.jpg",
+    "caption": "Yosemite Falls Upper",
+    "height": 1200,
+    "width": 797
   }]
 },
 {
-  "album": "NYC - Chicago",
-  "date": "Dec, 2015",
+  "album": "Alaska",
+  "date": "April, 2015",
   "photos": [{
     "thumbnail": {
-      "name": "pic_thumbnail.jpg",
-      "height": 200,
-      "width": 150
+      "name": "images/thumbnails/alaska/alaska_thumbnail1.jpg",
+      "height": 249,
+      "width": 375
     },
-    "name": "pic.jpg",
-    "caption": "this is the caption",
-    "height": 800,
-    "width": 600
+    "name": "images/large/alaska/alaska1.jpg",
+    "caption": "Aurora light in Fairbanks, Alaska",
+    "height": 797,
+    "width": 1200
   },
   {
     "thumbnail": {
-      "name": "pic_thumbnail.jpg",
-      "height": 200,
-      "width": 150
+      "name": "images/thumbnails/alaska/alaska_thumbnail2.jpg",
+      "height": 249,
+      "width": 375
     },
-    "name": "pic.jpg",
-    "caption": "this is the caption",
-    "height": 800,
-    "width": 600
+    "name": "images/large/alaska/alaska2.jpg",
+    "caption": "Aurora light in Fairbanks, Alaska",
+    "height": 797,
+    "width": 1200
   }]
 }]

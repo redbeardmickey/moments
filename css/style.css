@@ -28,7 +28,8 @@ h5 {
 
 .pairing h1, .pairing h3, .pairing h4, .pairing h5 {
   margin: 0;
-  margin-bottom: 0.2em; }
+  margin-bottom: 0.2em;
+  padding-left: 10px; }
 
 .text-align-right {
   text-align: right; }
@@ -74,9 +75,12 @@ h5 {
   flex-direction: row;
   flex-wrap: wrap; }
 
-.my-gallery-item {
-  padding: 5px;
-  height: 150px; }
+.my-gallery-item img {
+  height: auto;
+  width: 100%;
+  display: block; }
+.my-gallery-item a {
+  display: block; }
 
 .item-content {
   background: #eeeeee;
@@ -96,6 +100,9 @@ footer, .push {
   height: 50px;
   padding-top: 15px; }
 
+header {
+  padding-left: 10px; }
+
 header, .grid {
   margin-bottom: 10px; }
 
@@ -110,5 +117,13 @@ header, .grid {
       margin-bottom: 0; }
     header h4 {
       margin-top: 0; } }
+figure {
+  margin: 0; }
+  figure img {
+    height: auto;
+    width: 100%; }
+
+.my-gallery figcaption {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

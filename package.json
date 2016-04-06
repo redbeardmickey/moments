@@ -4,6 +4,8 @@
   "description": "Mickey's web gallery",
   "main": "index.html",
   "dependencies": {
+    "masonry-layout": "^4.0.0",
+    "mustache": "^2.2.1",
     "photoswipe": "^4.1.1"
   },
   "devDependencies": {},

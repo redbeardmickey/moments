@@ -32,6 +32,7 @@ h5
   h1, h3, h4, h5
     margin: 0
     margin-bottom: 0.2em
+    padding-left: 10px
 
 // text-align utilities
 .text-align-right
@@ -84,9 +85,15 @@ h5
   flex-wrap: wrap
 
 .my-gallery-item
-  padding: 5px
-  // margin: 0 5px 5px 0
-  height: 150px
+  // padding: 5px
+  // padding: 0 1px 1px 0
+  // height: 150px
+  img
+    height: auto
+    width: 100%
+    display: block
+  a
+    display: block
 
 .item-content
   background: #eeeeee
@@ -109,8 +116,10 @@ footer, .push
   height: $footer-height
   padding-top: 15px
 
+header
+  padding-left: 10px
+
 header, .grid
-  // padding-left: 15px
   margin-bottom: 10px
 
 @media screen and (min-width: 769px)
@@ -125,3 +134,12 @@ header, .grid
       margin-bottom: 0
     h4
       margin-top: 0
+
+figure
+  margin: 0
+  img
+    height: auto
+    width: 100%
+
+.my-gallery figcaption
+  display: none
