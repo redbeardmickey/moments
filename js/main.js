@@ -28,7 +28,8 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
       item = {
         src: linkEl.getAttribute('href'),
         w: parseInt(size[0], 10),
-        h: parseInt(size[1], 10)
+        h: parseInt(size[1], 10),
+        title: linkEl.children[0].getAttribute('alt')
       };
 
       // if(figureEl.children.length > 1) {
@@ -44,7 +45,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
       item.el = linkEl; // save link to element for getThumbBoundsFn
       items.push(item);
     }
-    console.log(items);
+    // console.log(items);
     return items;
   };
 

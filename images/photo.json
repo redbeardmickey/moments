@@ -79,12 +79,23 @@
     "caption": "Tunnel View of Yosemite Valley",
     "height": 797,
     "width": 1200
+  },
+  {
+    "thumbnail": {
+      "name": "images/thumbnails/yosemite/yosemite_thumbnail8.jpg",
+      "height": 375,
+      "width": 249
+    },
+    "name": "images/large/yosemite/yosemite8.jpg",
+    "caption": "Yosemite Falls from Swing Bridge",
+    "height": 797,
+    "width": 1200
   }]
 },
 {
   "albumName": "Japan",
   "albumID": "japan0615",
-  "date": "June, 2015",
+  "date": "July, 2015",
   "photos": [{
     "thumbnail": {
       "name": "images/thumbnails/japan/japan_thumbnail1.jpg",
@@ -114,7 +125,7 @@
       "width": 375
     },
     "name": "images/large/japan/japan3.jpg",
-    "caption": "Deer at Tōdai-ji, Nara",
+    "caption": "Ginkaku-ji, Kyoto",
     "height": 797,
     "width": 1200
   },
@@ -125,7 +136,7 @@
       "width": 375
     },
     "name": "images/large/japan/japan4.jpg",
-    "caption": "Deer at Tōdai-ji, Nara",
+    "caption": "Enoshima Electric Railway Line at Kamakurakoko-Mae, Kamakura",
     "height": 797,
     "width": 1200
   },
@@ -136,7 +147,7 @@
       "width": 375
     },
     "name": "images/large/japan/japan5.jpg",
-    "caption": "Deer at Tōdai-ji, Nara",
+    "caption": "Lake Ashi, Hakone",
     "height": 797,
     "width": 1200
   },
@@ -147,7 +158,7 @@
       "width": 375
     },
     "name": "images/large/japan/japan6.jpg",
-    "caption": "Deer at Tōdai-ji, Nara",
+    "caption": "Kinkaku-ji, Kyoto",
     "height": 797,
     "width": 1200
   },
@@ -158,9 +169,42 @@
       "width": 249
     },
     "name": "images/large/japan/japan7.jpg",
-    "caption": "Deer at Tōdai-ji, Nara",
+    "caption": "Osaka Castle, Osaka",
     "height": 1200,
     "width": 797
+  },
+  {
+    "thumbnail": {
+      "name": "images/thumbnails/japan/japan_thumbnail8.jpg",
+      "height": 249,
+      "width": 375
+    },
+    "name": "images/large/japan/japan8.jpg",
+    "caption": "Nijō Castle, Kyoto",
+    "height": 797,
+    "width": 1200
+  },
+  {
+    "thumbnail": {
+      "name": "images/thumbnails/japan/japan_thumbnail9.jpg",
+      "height": 249,
+      "width": 375
+    },
+    "name": "images/large/japan/japan9.jpg",
+    "caption": "Hakone Gora Park, Hakone",
+    "height": 797,
+    "width": 1200
+  },
+  {
+    "thumbnail": {
+      "name": "images/thumbnails/japan/japan_thumbnail10.jpg",
+      "height": 249,
+      "width": 375
+    },
+    "name": "images/large/japan/japan10.jpg",
+    "caption": "Hakone Open-Air Museum, Hakone",
+    "height": 797,
+    "width": 1200
   }]
 },
 {
@@ -174,7 +218,7 @@
       "width": 375
     },
     "name": "images/large/alaska/alaska1.jpg",
-    "caption": "Aurora light in Fairbanks, Alaska",
+    "caption": "Chandalar Ranch, Fairbanks",
     "height": 797,
     "width": 1200
   },
@@ -185,7 +229,7 @@
       "width": 375
     },
     "name": "images/large/alaska/alaska2.jpg",
-    "caption": "Aurora light in Fairbanks, Alaska",
+    "caption": "Aurora light from Murphy Dome, Fairbanks",
     "height": 797,
     "width": 1200
   },
@@ -196,7 +240,7 @@
       "width": 375
     },
     "name": "images/large/alaska/alaska3.jpg",
-    "caption": "Aurora light in Fairbanks, Alaska",
+    "caption": "Aurora light from Chandalar Ranch, Fairbanks",
     "height": 1200,
     "width": 797
   },
@@ -207,7 +251,7 @@
       "width": 375
     },
     "name": "images/large/alaska/alaska4.jpg",
-    "caption": "Aurora light in Fairbanks, Alaska",
+    "caption": "Aurora light from Chandalar Ranch, Alaska",
     "height": 797,
     "width": 1200
   }]
