@@ -200,7 +200,6 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 };
 
 // execute above function
-// initPhotoSwipeFromDOM('.my-gallery');
 
 $( function() {
 
@@ -234,6 +233,8 @@ $( function() {
       $container.masonryImagesReveal($thumbnails);
 
     });
+
+  initPhotoSwipeFromDOM('.album');
 
   })
 });

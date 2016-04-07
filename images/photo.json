@@ -5,7 +5,7 @@
   "date": "April, 2016",
   "photos": [{
     "thumbnail": {
-      "name": "http://placehold.it/375x249",
+      "name": "images/thumbnails/yosemite/yosemite_thumbnail1.jpg",
       "height": 249,
       "width": 375
     },
@@ -16,29 +16,7 @@
   },
   {
     "thumbnail": {
-      "name": "http://placehold.it/375x249",
-      "height": 249,
-      "width": 375
-    },
-    "name": "images/large/yosemite/yosemite1.jpg",
-    "caption": "Tunnel View of Yosemite Valley",
-    "height": 797,
-    "width": 1200
-  },
-  {
-    "thumbnail": {
-      "name": "http://placehold.it/375x249",
-      "height": 249,
-      "width": 375
-    },
-    "name": "images/large/yosemite/yosemite1.jpg",
-    "caption": "Tunnel View of Yosemite Valley",
-    "height": 797,
-    "width": 1200
-  },
-  {
-    "thumbnail": {
-      "name": "http://placehold.it/375x249",
+      "name": "images/thumbnails/yosemite/yosemite_thumbnail2.jpg",
       "height": 375,
       "width": 249
     },
@@ -46,6 +24,61 @@
     "caption": "Yosemite Falls Upper",
     "height": 1200,
     "width": 797
+  },
+  {
+    "thumbnail": {
+      "name": "images/thumbnails/yosemite/yosemite_thumbnail3.jpg",
+      "height": 375,
+      "width": 249
+    },
+    "name": "images/large/yosemite/yosemite3.jpg",
+    "caption": "Yosemite Valley Mirror Lake",
+    "height": 1200,
+    "width": 797
+  },
+  {
+    "thumbnail": {
+      "name": "images/thumbnails/yosemite/yosemite_thumbnail4.jpg",
+      "height": 375,
+      "width": 249
+    },
+    "name": "images/large/yosemite/yosemite4.jpg",
+    "caption": "Yosemite Valley",
+    "height": 1200,
+    "width": 797
+  },
+  {
+    "thumbnail": {
+      "name": "images/thumbnails/yosemite/yosemite_thumbnail6.jpg",
+      "height": 375,
+      "width": 249
+    },
+    "name": "images/large/yosemite/yosemite6.jpg",
+    "caption": "Yosemite Falls Upper",
+    "height": 797,
+    "width": 1200
+  },
+  {
+    "thumbnail": {
+      "name": "images/thumbnails/yosemite/yosemite_thumbnail5.jpg",
+      "height": 375,
+      "width": 249
+    },
+    "name": "images/large/yosemite/yosemite5.jpg",
+    "caption": "Yosemite Falls Upper",
+    "height": 1200,
+    "width": 797
+  },
+  {
+    "thumbnail": {
+      "name": "images/thumbnails/yosemite/yosemite_thumbnail7.jpg",
+      "height": 375,
+      "width": 249
+    },
+    "name": "images/large/yosemite/yosemite7.jpg",
+    "caption": "Tunnel View of Yosemite Valley",
+    "height": 797,
+    "width": 1200
   }]
 },
 {
@@ -54,25 +87,80 @@
   "date": "June, 2015",
   "photos": [{
     "thumbnail": {
-      "name": "http://placehold.it/249x375",
+      "name": "images/thumbnails/japan/japan_thumbnail1.jpg",
       "height": 249,
       "width": 375
     },
     "name": "images/large/japan/japan1.jpg",
-    "caption": "Japan 1",
+    "caption": "Kiyomizu-dera, Kyoto",
     "height": 797,
     "width": 1200
   },
   {
     "thumbnail": {
-      "name": "http://placehold.it/375x249",
-      "height": 249,
+      "name": "images/thumbnails/japan/japan_thumbnail2.jpg",
+      "height": 375,
       "width": 375
     },
     "name": "images/large/japan/japan2.jpg",
-    "caption": "Aurora light in Fairbanks, Alaska",
+    "caption": "Deer at Tōdai-ji, Nara",
+    "height": 1200,
+    "width": 1200
+  },
+  {
+    "thumbnail": {
+      "name": "images/thumbnails/japan/japan_thumbnail3.jpg",
+      "height": 249,
+      "width": 375
+    },
+    "name": "images/large/japan/japan3.jpg",
+    "caption": "Deer at Tōdai-ji, Nara",
     "height": 797,
     "width": 1200
+  },
+  {
+    "thumbnail": {
+      "name": "images/thumbnails/japan/japan_thumbnail4.jpg",
+      "height": 249,
+      "width": 375
+    },
+    "name": "images/large/japan/japan4.jpg",
+    "caption": "Deer at Tōdai-ji, Nara",
+    "height": 797,
+    "width": 1200
+  },
+  {
+    "thumbnail": {
+      "name": "images/thumbnails/japan/japan_thumbnail5.jpg",
+      "height": 249,
+      "width": 375
+    },
+    "name": "images/large/japan/japan5.jpg",
+    "caption": "Deer at Tōdai-ji, Nara",
+    "height": 797,
+    "width": 1200
+  },
+  {
+    "thumbnail": {
+      "name": "images/thumbnails/japan/japan_thumbnail6.jpg",
+      "height": 249,
+      "width": 375
+    },
+    "name": "images/large/japan/japan6.jpg",
+    "caption": "Deer at Tōdai-ji, Nara",
+    "height": 797,
+    "width": 1200
+  },
+  {
+    "thumbnail": {
+      "name": "images/thumbnails/japan/japan_thumbnail7.jpg",
+      "height": 375,
+      "width": 249
+    },
+    "name": "images/large/japan/japan7.jpg",
+    "caption": "Deer at Tōdai-ji, Nara",
+    "height": 1200,
+    "width": 797
   }]
 },
 {
@@ -81,7 +169,7 @@
   "date": "March, 2015",
   "photos": [{
     "thumbnail": {
-      "name": "http://placehold.it/375x249",
+      "name": "images/thumbnails/alaska/alaska_thumbnail1.jpg",
       "height": 249,
       "width": 375
     },
@@ -92,11 +180,33 @@
   },
   {
     "thumbnail": {
-      "name": "http://placehold.it/375x249",
+      "name": "images/thumbnails/alaska/alaska_thumbnail2.jpg",
       "height": 249,
       "width": 375
     },
     "name": "images/large/alaska/alaska2.jpg",
+    "caption": "Aurora light in Fairbanks, Alaska",
+    "height": 797,
+    "width": 1200
+  },
+  {
+    "thumbnail": {
+      "name": "images/thumbnails/alaska/alaska_thumbnail3.jpg",
+      "height": 249,
+      "width": 375
+    },
+    "name": "images/large/alaska/alaska3.jpg",
+    "caption": "Aurora light in Fairbanks, Alaska",
+    "height": 1200,
+    "width": 797
+  },
+  {
+    "thumbnail": {
+      "name": "images/thumbnails/alaska/alaska_thumbnail4.jpg",
+      "height": 249,
+      "width": 375
+    },
+    "name": "images/large/alaska/alaska4.jpg",
     "caption": "Aurora light in Fairbanks, Alaska",
     "height": 797,
     "width": 1200
