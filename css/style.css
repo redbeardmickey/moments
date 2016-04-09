@@ -73,14 +73,17 @@ h5 {
 .album {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-left: 5px; }
 
-.album-thumbnail img {
-  height: auto;
-  width: 100%;
-  display: block; }
-.album-thumbnail a {
-  display: block; }
+.album-thumbnail {
+  padding: 0 5px 5px 0; }
+  .album-thumbnail img {
+    height: auto;
+    width: 100%;
+    display: block; }
+  .album-thumbnail a {
+    display: block; }
 
 @media screen and (min-width: 769px) {
   .album-thumbnail {

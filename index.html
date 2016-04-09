@@ -31,7 +31,7 @@
     <div class="push"></div>
   </div>
   <footer class="text-align-center">
-    Designed and hand-built by Mickey Li using <a href="http://photoswipe.com/">PhotoSwipe</a> and <a href="http://masonry.desandro.com/">Masonry</a>
+  Designed and hand-built by Mickey.
   </footer>
 
   <!-- Root element of PhotoSwipe. Must have class pswp. -->
@@ -112,8 +112,8 @@
 
   <script id="thumbnailTemplate" type="x-tmpl-mustache">
     {{#photos}}
-    <a href={{name}} class="album-thumbnail" data-size={{width}}*{{height}}>
-      <img src={{thumbnail.name}} alt={{caption}} />
+    <a href="{{name}}" class="album-thumbnail" data-size="{{width}}*{{height}}">
+      <img src="{{thumbnail.name}}" alt="{{caption}}" />
     </a>
     {{/photos}}
   </script>
