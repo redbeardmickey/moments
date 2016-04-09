@@ -204,7 +204,12 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
 $( function() {
 
-  $.getJSON('images/photo.json', function(data) {
+  $.getJSON('images_test/data.json', function(data) {
+
+    data.albums.sort(function(a, b){
+      return a.timeStamp < b.timeStamp;
+    });
+
     var galleryTemplate = $('#galleryTemplate').html();
     Mustache.parse(galleryTemplate);
     var renderedGallery = Mustache.render(galleryTemplate, data);
