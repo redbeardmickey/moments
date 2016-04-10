@@ -204,7 +204,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
 $( function() {
 
-  $.getJSON('images_test/data.json', function(data) {
+  $.getJSON('images/photos.json', function(data) {
 
     data.albums.sort(function(a, b){
       return a.timeStamp < b.timeStamp;

@@ -4,7 +4,7 @@ import PIL.ExifTags
 import json
 import datetime
 
-ROOT_DIR = 'images_test'
+ROOT_DIR = 'images'
 ORIGINALS_DIR = os.path.join(ROOT_DIR, 'originals')
 THUMBNAILS_DIR = os.path.join(ROOT_DIR, 'thumbnails')
 LARGE_IMAGES_DIR = os.path.join(ROOT_DIR, 'largeImages')
@@ -71,17 +71,20 @@ def main():
           caption = ''
 
         # resizeImage(im, albumID, name)
-
+        targetThumbnail = os.path.join(THUMBNAILS_DIR, albumID, name)
+        print('Writing:', targetThumbnail, end="... ")
         thumbnail = im.copy()
         thumbnail.thumbnail(THUMBNAIL_SIZE)
+        thumbnail.save(targetThumbnail, 'JPEG')
+        print('Success!')
 
+        targetLarge = os.path.join(LARGE_IMAGES_DIR, albumID, name)
+        print('Writing:', targetLarge, end="... ")
         large = im.copy()
         large.thumbnail(LARGE_IMAGE_SIZE)
-
-        targetThumbnail = os.path.join(THUMBNAILS_DIR, albumID, name)
-        targetLarge = os.path.join(LARGE_IMAGES_DIR, albumID, name)
-        thumbnail.save(targetThumbnail, 'JPEG')
         large.save(targetLarge, 'JPEG')
+
+        print('Success!')
 
         # print(large.size)
 
@@ -105,6 +108,7 @@ def main():
         # my_list = filter(lambda x: x.attribute == value, albumsData['albums'])
 
     for name in dirs:
+      print('Initializing Album:', name)
       initAlbumDirs(name)
 
       albumData = {}
@@ -122,9 +126,12 @@ def main():
       albumsData['albums'].append(albumData)
 
   # print(json.dumps(albumsData))
-
-  with open('images_test/data.json', 'w') as outfile:
+  print('Generating JSON file', end="... ")
+  with open('images/photos.json', 'w') as outfile:
     json.dump(albumsData, outfile)
+  print('Success!')
+  print('--------------------')
+  print('Finished!')
 
 if __name__ == '__main__':
   main()
